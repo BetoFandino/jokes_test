@@ -8,7 +8,6 @@ def chuknorris_get(num_jokes):
     array_jokes = []
     list_jokes = []
     try:
-        #for each1 in range(0, num_jokes):
         url = 'https://api.chucknorris.io/jokes/random'
         while len(list_jokes) < num_jokes:
             list_jokes.append(requests.get(url).json())
